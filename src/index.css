@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+  box-sizing: border-box;
+  
+}
+body{
+  background-color: rgb(2, 37, 46);
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.overall{
+  display: flex;
+  justify-content: center;
+}
+.book-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.book{
+  margin: 1rem;
+  width: 300px;
+  background-color: rgb(72, 146, 118);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 3px px 5px rgba(116, 92, 92, 0.1);
+}
+.book img{
+  max-width: 100%;
+}
+.book-info{
+  padding: 1rem;
+  position: relative;
+}
+.book-description{
+   background-color: rgb(100, 187, 153);
+   color: rgb(54, 52, 52);
+   position: absolute;
+   padding: 1rem;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   transform:translateX(102%);
+   transition: transform 0.3s ease-in-out;
+   overflow: auto;
+   box-shadow: 3px px 5px rgba(116, 92, 92, 0.1);
+   border-radius: 3px;
+   
+}
+.book-description .publisher{
+ color: rgb(14, 13, 13);
+}
+
+.book:hover .book-description{
+  transform: translateY(0%);
+}
+.nav{
+  color: #000;
+}
